@@ -1,8 +1,8 @@
 # The Interrogation
 
-Face off against AI detectives in this retro pixel-art interrogation game powered by Google Gemini. Outsmart the Good Cop and Bad Cop in a high-stakes battle of wits.
+Face off against AI detectives in this retro pixel-art interrogation game powered by multi-modal Google Gemini 3 AI. Outsmart the Good Cop and Bad Cop in a high-stakes battle of wits.
 
-![Architecture Diagram](architecture.svg)
+<img width="2620" height="1420" alt="case 3 example" src="https://github.com/user-attachments/assets/08e2eb96-5a0a-42b1-a3a6-fcd012ca4da2" />
 
 ## Inspiration
 We were inspired by classic noir films and police procedurals like *True Detective* and *Mindhunter*, specifically the intense psychological pressure of the interrogation room. We wanted to see if we could recreate that "Good Cop / Bad Cop" dynamic using generative AI, not just through text, but through voice and personality.
@@ -41,4 +41,6 @@ The application places the user in a pixel-art interrogation room.
 ## What's next for The interrogation
 *   **Professional Training Simulation:** If fine-tuned on real legal practices and transcripts of actual criminal cases, this platform could evolve into a serious training tool. It could help law students practice client protection strategies or assist junior detectives in learning effective interrogation techniques while adhering to legal boundaries.
 *   **3D Graphics & Evidence Visualization:** We plan to transition from pixel art to high-fidelity 3D graphics. Additionally, we want to integrate the **Gemini Nano ("Nano Banana")** model to generate real-time visual representations of evidence mentioned during the interrogation, making the case files come to life.
-*   **More Detectives:** Adding a "Rotation" system where different detectives with unique psychological profiles (e.g., the "Lazy Cop" or the "Corrupt Cop") enter the
+*   **More Detectives:** Adding a "Rotation" system where different detectives with unique psychological profiles (e.g., the "Lazy Cop" or the "Corrupt Cop") enter the room.
+
+![Architecture Diagram](architecture.svg)
