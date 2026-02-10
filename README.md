@@ -5,7 +5,7 @@ Face off against AI detectives in this retro pixel-art interrogation game powere
 <img width="2620" height="1420" alt="case 3 example" src="https://github.com/user-attachments/assets/08e2eb96-5a0a-42b1-a3a6-fcd012ca4da2" />
 
 ## Inspiration
-We were inspired by classic noir films and police procedurals like *True Detective* and *Mindhunter*, specifically the intense psychological pressure of the interrogation room. We wanted to see if we could recreate that "Good Cop / Bad Cop" dynamic using generative AI, not just through text, but through voice and personality.
+We were inspired by classic noir films and police procedurals like *True Detective*, specifically the intense psychological pressure of the interrogation room. We wanted to see if we could recreate that "Good Cop / Bad Cop" dynamic using generative AI, not just through text, but through voice and personality.
 
 Additionally, we wanted to gamify a crucial piece of civic knowledge: the 5th Amendment. While the goal seems to be proving your innocence, the "secret" winning condition is knowing when to stop talking and ask for a lawyer.
 
