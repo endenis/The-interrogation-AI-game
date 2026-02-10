@@ -36,7 +36,7 @@ The application places the user in a pixel-art interrogation room.
 
 ## What we learned
 *   **The Power of Multimodal AI:** We learned how to weave text generation and audio generation into a single cohesive experience using the Google GenAI SDK.
-*   **Context Management:** We learned the importance of hidden context injection—feeding the AI the "Actual Truth" of the crime while instructing it to pretend it doesn't know, simulating the information gap in real police work.
+*   **Context Management:** We learned the importance of hidden context injection - feeding the AI the "Actual Truth" of the crime while instructing it to pretend it doesn't know, simulating the information gap in real police work.
 
 ## What's next for The interrogation
 *   **Professional Training Simulation:** If fine-tuned on real legal practices and transcripts of actual criminal cases, this platform could evolve into a serious training tool. It could help law students practice client protection strategies or assist junior detectives in learning effective interrogation techniques while adhering to legal boundaries.
