@@ -1,0 +1,7 @@
+{
+  "name": "The interrogation",
+  "description": "Face off against AI detectives in this retro pixel-art interrogation game powered by Google Gemini. Outsmart the Good Cop and Bad Cop in a high-stakes battle of wits.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

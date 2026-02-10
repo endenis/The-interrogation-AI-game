@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" style="background-color:#0f172a">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&amp;display=swap');
+      .bg { fill: #0f172a; }
+      .box { fill: #1e293b; stroke: #475569; stroke-width: 2px; rx: 8px; }
+      .box-highlight { fill: #172554; stroke: #3b82f6; stroke-width: 2px; rx: 8px; }
+      .box-accent { fill: #450a0a; stroke: #ef4444; stroke-width: 2px; rx: 8px; }
+      .text { fill: #e2e8f0; font-family: 'Courier Prime', monospace; font-size: 14px; }
+      .text-title { fill: #f59e0b; font-family: 'Courier Prime', monospace; font-weight: bold; font-size: 18px; text-transform: uppercase; }
+      .text-sub { fill: #94a3b8; font-family: sans-serif; font-size: 12px; }
+      .arrow { stroke: #cbd5e1; stroke-width: 2px; fill: none; marker-end: url(#arrowhead); }
+      .arrow-label { fill: #94a3b8; font-family: sans-serif; font-size: 11px; background-color: #0f172a; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cbd5e1" />
+    </marker>
+  </defs>
+
+  <rect width="800" height="600" class="bg" />
+
+  <text x="400" y="40" text-anchor="middle" class="text-title" style="font-size: 24px; fill: #ef4444;">Project Architecture: "The Interrogation"</text>
+
+  <!-- Client Side -->
+  <rect x="50" y="80" width="300" height="480" class="box" />
+  <text x="200" y="110" text-anchor="middle" class="text-title">Frontend (React)</text>
+
+  <!-- Input -->
+  <rect x="80" y="140" width="240" height="60" class="box" style="stroke-dasharray: 4;" />
+  <text x="200" y="165" text-anchor="middle" class="text">Input Handler</text>
+  <text x="200" y="185" text-anchor="middle" class="text-sub">Mic (MediaRecorder) / Text</text>
+
+  <!-- State -->
+  <rect x="80" y="250" width="240" height="60" class="box" style="stroke-dasharray: 4;" />
+  <text x="200" y="275" text-anchor="middle" class="text">Game Logic</text>
+  <text x="200" y="295" text-anchor="middle" class="text-sub">State / History / Turn Manager</text>
+
+  <!-- Output -->
+  <rect x="80" y="450" width="240" height="60" class="box" style="stroke-dasharray: 4;" />
+  <text x="200" y="475" text-anchor="middle" class="text">Audio Engine</text>
+  <text x="200" y="495" text-anchor="middle" class="text-sub">Web Audio API (PCM Queue)</text>
+
+  <!-- Server Side (API) -->
+  <rect x="450" y="80" width="300" height="480" class="box" />
+  <text x="600" y="110" text-anchor="middle" class="text-title">Google Gemini API</text>
+
+  <!-- Logic Model -->
+  <rect x="480" y="180" width="240" height="80" class="box-highlight" />
+  <text x="600" y="205" text-anchor="middle" class="text" style="fill: #60a5fa;">Reasoning Engine</text>
+  <text x="600" y="225" text-anchor="middle" class="text" style="font-size: 12px;">Gemini 3 Flash</text>
+  <text x="600" y="245" text-anchor="middle" class="text-sub">System Instructions / Context</text>
+
+  <!-- TTS Model -->
+  <rect x="480" y="360" width="240" height="80" class="box-accent" />
+  <text x="600" y="385" text-anchor="middle" class="text" style="fill: #f87171;">Voice Synthesis</text>
+  <text x="600" y="405" text-anchor="middle" class="text" style="font-size: 12px;">Gemini 2.5 Pro TTS</text>
+  <text x="600" y="425" text-anchor="middle" class="text-sub">Charon / Aoede Voices</text>
+
+  <!-- Flows -->
+  
+  <!-- 1. Input -> Logic -->
+  <path d="M 320 170 L 480 220" class="arrow" />
+  <text x="400" y="185" text-anchor="middle" class="text-sub" style="fill:#e2e8f0; background:#0f172a;">1. Send User Turn</text>
+
+  <!-- 2. Logic -> Client -->
+  <path d="M 480 230 L 320 280" class="arrow" />
+  <text x="400" y="265" text-anchor="middle" class="text-sub" style="fill:#e2e8f0;">2. JSON Response</text>
+
+  <!-- 3. Client -> TTS -->
+  <path d="M 320 290 L 480 390" class="arrow" />
+  <text x="400" y="350" text-anchor="middle" class="text-sub" style="fill:#e2e8f0;">3. Request Audio</text>
+
+  <!-- 4. TTS -> Output -->
+  <path d="M 480 400 L 320 480" class="arrow" />
+  <text x="400" y="450" text-anchor="middle" class="text-sub" style="fill:#e2e8f0;">4. Stream PCM Data</text>
+
+</svg>
